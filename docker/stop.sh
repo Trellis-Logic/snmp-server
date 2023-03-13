@@ -1,2 +1,3 @@
 #!/bin/bash
-docker stop snmp-server
+pushd $(dirname $0)/service
+docker-compose down
